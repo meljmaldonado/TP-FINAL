@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1781364576 source:c:\users\usuario\documents\github\tp-final\pila.c
+	<stdio.h>
+	"pila.h"
+
+1781364583 c:\users\usuario\documents\github\tp-final\pila.h
+
+1781365013 source:c:\users\usuario\documents\github\tp-final\empleado.c
+	<stdio.h>
+	<stdlib.h>
+	"empleado.h"
+
+1781365098 c:\users\usuario\documents\github\tp-final\empleado.h
+
+1781365321 source:c:\users\usuario\documents\github\tp-final\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1781365321 source:c:\users\usuario\documents\github\tp-final\producto.c
+	<stdio.h>
+	<stdlib.h>
+	"producto.h"
+
+1781365321 c:\users\usuario\documents\github\tp-final\producto.h
+
