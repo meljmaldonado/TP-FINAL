@@ -7,6 +7,7 @@ typedef struct
     char puesto[30];
     int sueldo;
     int legajo;
+    int valido;
 } empleado;
 
 

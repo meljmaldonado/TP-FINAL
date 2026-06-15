@@ -6,6 +6,7 @@ typedef struct
     char nombre[30];
     int precio;
     int cantidad;
+    int valido;
 } producto;
 
 

@@ -114,8 +114,8 @@ empleado crearEmpleado()
         aux.sueldo = 800000;
 
         break;
-
-
     }
+
+    aux.valido=1;
     return aux;
 }

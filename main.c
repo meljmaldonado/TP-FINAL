@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+void menuProductos();
+void menuEmpleados();
 
 
 int main()
@@ -18,11 +20,33 @@ int main()
         switch(menu)
         {
         case 1:
-            while(control2==1){
+            menuProductos();
+
+            break;
+
+        case 2:
+            menuEmpleados();
+            break;
+
+        case 3:
+            control=0;
+            break;
+        }
+    }
+
+
+
+    return 0;
+}
+
+
+void menuProductos(){
+int control=1, menu;
+ while(control==1){
             printf("1)Lista de productos\n 2)Productos nuevos\n 3)Hisotirial de ventas\n 4)Volver atrás\n");
-            scanf("%d", &menu2);
+            scanf("%d", &menu);
             system("cls");
-            switch(menu2){
+            switch(menu){
                 case 1:
                     leerListaProductos("productos.bin");
                 break;
@@ -35,31 +59,28 @@ int main()
 
                 break;
                 case 4:
-                    control2=0;
+                    control=0;
                     break;
                 }
 
             }
+}
 
-            break;
+void menuEmpleados(){
+int control=1, menu, aux;
+ while(control==1){
+            aux = leerListaEmpleados("empleados.bin");
 
-        case 2:
-            while(control2==1){
-            a = leerListaEmpleados("empleados.bin");
-
-            if(a == 0)
+            if(aux == 0)
             {
-                printf("Por favor ingrese un empleado");
-                agregarEmpleados("empleados.bin");
+                printf("No se encontraron empleados registrados\n\n");
             }
-            else
-            {
-                printf("1)Aregar empleado 2)Eleminar empleado 3)Modificar empleado 4)Volver atrás");
-                scanf("%i", &menu2);
+                printf("1)Aregar empleado 2)Eleminar empleado 3)Modificar empleado 5)Volver atras");
+                scanf("%i", &menu);
 
                 system("cls");
 
-                switch(menu2)
+                switch(menu)
                 {
                 case 1:
 
@@ -70,25 +91,12 @@ int main()
                 case 2:
 
                     break;
-                case 4:
-                    control2=0;
-                    break;
-                }
-            }
-
-            break;
-
-                case 3:
+                case 5:
                     control=0;
                     break;
-        }
-        }
+                }
 
-    }
 
-    return 0;
+
+ }
 }
-
-
-
-//Fun Productos

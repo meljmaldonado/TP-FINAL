@@ -22,7 +22,7 @@ producto crearProducto(){
 
     printf("\nIngrese la CANTIDAD del producto: ");
     scanf("%d", &p.cantidad);
-
+    p.valido=1;
     return p;
 }
 
